@@ -1,0 +1,44 @@
+{
+  "name": "leetcode", // コンテナ表示名
+  "dockerComposeFile": [
+    "../docker-compose.yml" // Docker Composeのファイルパス
+  ],
+  "service": "leetcode", // Docker Composeの接続サービス名
+  "workspaceFolder": "/workspace", // Workspaceのフォルダを指定
+  "extensions": [
+    // コンテナ内でインストールするVS Codeの拡張機能ID
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "LeetCode.vscode-leetcode"
+  ],
+  "settings": {
+    // コンテナ内に追加するVS Codeの設定
+    "[python]": {
+      "editor.tabSize": 4,
+      "editor.formatOnSave": true,
+      "editor.formatOnPaste": false,
+      "editor.insertSpaces": true,
+      "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+      }
+    },
+    /* Formatter */
+    "python.formatting.blackPath": "/usr/local/bin/black",
+    "python.formatting.provider": "black",
+    /* Linter */
+    "python.linting.pylintEnabled": false,
+    "python.linting.enabled": true,
+    "python.linting.flake8Path": "/usr/local/bin/flake8",
+    "python.linting.flake8Enabled": true,
+    /* 
+    自動保存時にflake8が動かせていない
+    赤文字の抑制
+    */
+    "python.linting.lintOnSave": false,
+
+    /* テーマ */
+    "workbench.colorTheme": "Default Dark+",
+    "leetcode.workspaceFolder": "/workspace/src/leetcode",
+    "leetcode.defaultLanguage": "python3"
+  }
+}
