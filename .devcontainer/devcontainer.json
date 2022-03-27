@@ -25,19 +25,9 @@
     /* Formatter */
     "python.formatting.blackPath": "/usr/local/bin/black",
     "python.formatting.provider": "black",
-    /* Linter */
-    "python.linting.pylintEnabled": false,
-    "python.linting.enabled": true,
-    "python.linting.flake8Path": "/usr/local/bin/flake8",
-    "python.linting.flake8Enabled": true,
-    /* 
-    自動保存時にflake8が動かせていない
-    赤文字の抑制
-    */
-    "python.linting.lintOnSave": false,
-
     /* テーマ */
     "workbench.colorTheme": "Default Dark+",
+    /* leetCode用 */
     "leetcode.workspaceFolder": "/workspace/src/leetcode",
     "leetcode.defaultLanguage": "python3"
   }
