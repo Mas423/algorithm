@@ -1,11 +1,13 @@
 version: "3.8"
 
 services:
-  leetcode:
-    container_name: leetcode
+  algorithm:
+    container_name: algorithm
     build:
       context: .
-      dockerfile: docker_python/Dockerfile
+      dockerfile: docker/Dockerfile
     tty: true
+    env_file:
+      - .env
     volumes:
-      - ./workspace:/workspace
+      - ./workspace/src:/workspace/src

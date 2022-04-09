@@ -1,10 +1,10 @@
 {
-  "name": "leetcode", // コンテナ表示名
+  "name": "algorithm", // コンテナ表示名
   "dockerComposeFile": [
     "../docker-compose.yml" // Docker Composeのファイルパス
   ],
-  "service": "leetcode", // Docker Composeの接続サービス名
-  "workspaceFolder": "/workspace", // Workspaceのフォルダを指定
+  "service": "algorithm", // Docker Composeの接続サービス名
+  "workspaceFolder": "/workspace/src", // Workspaceのフォルダを指定
   "extensions": [
     // コンテナ内でインストールするVS Codeの拡張機能ID
     "ms-python.python",
