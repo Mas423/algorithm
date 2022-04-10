@@ -1,5 +1,1 @@
-
-def main():
-    n=input()
-
-main()
+n=input()

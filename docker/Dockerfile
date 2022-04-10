@@ -41,8 +41,7 @@ RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash && \
 # atcoder-cliの設定
 RUN acc config-dir && \
     acc config default-template python && \
-    acc config default-test-dirname-format test && \
-    acc config default-task-choice all
+    acc config default-test-dirname-format test
 
 # configを設定
 COPY ./docker/template.json /root/.config/atcoder-cli-nodejs/python/
