@@ -1,6 +1,7 @@
-s=int(input())
-a=s//10
-b=str(a)
-print(b.zfill(4))
-# print("0"+b)
-# print("0".join(str(s//10)))
+s=list(input())
+
+s[3]=s[2]
+s[2]=s[1]
+s[1]=s[0]
+s[0]="0"
+print("".join(s))
