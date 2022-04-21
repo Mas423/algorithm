@@ -37,17 +37,6 @@
         "testdir": "test",
         "submit": "main.py"
       }
-    },
-    {
-      "id": "arc060_b",
-      "label": "D",
-      "title": "Digit Sum",
-      "url": "https://atcoder.jp/contests/abc044/tasks/arc060_b",
-      "directory": {
-        "path": "d",
-        "testdir": "test",
-        "submit": "main.py"
-      }
     }
   ]
 }
