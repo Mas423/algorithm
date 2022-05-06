@@ -10,7 +10,7 @@ if a==1:
     exit()
 
 l=[]
-for i in range(1,10**9):
+for i in range(1,b*a):
     if a*i in l:
         print(no)
         exit()
@@ -18,3 +18,4 @@ for i in range(1,10**9):
         print(yes)
         exit()
     l.append(a*i)
+print(no)
